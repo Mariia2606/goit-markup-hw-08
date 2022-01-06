@@ -18,13 +18,14 @@ img {
   width: 100%;
 }
 .section {
-  @media screen and (min-width: 1200px) {
-    padding-top: 95px;
-    padding-bottom: 95px;
-  }
+
   @media screen and (min-width: 480px) {
     padding-top: 60px;
     padding-bottom: 60px;
+  }
+    @media screen and (min-width: 1200px) {
+    padding-top: 95px;
+    padding-bottom: 95px;
   }
 }
 .conteiner--footer {

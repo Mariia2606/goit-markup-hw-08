@@ -9,18 +9,22 @@
   background-position: center;
   background-size: cover;
   text-align: center;
-  padding-bottom: 200px;
-  padding-top: 200px;
+  
   width: 1600px;
   margin: 0 auto;
+  @media screen and (min-width: 480px) {
+    width: 480px;
+    padding-bottom: 118px;
+  padding-top: 118px;
+  }
   @media screen and (min-width: 768px) {
     width: 768px;
   }
-  @media screen and (min-width: 480px) {
-    width: 480px;
-  }
+  
   @media screen and (min-width: 1200px) {
     width: 1200px;
+    padding-bottom: 200px;
+  padding-top: 200px;
   }
 }
 
@@ -28,25 +32,31 @@
   font-family: Roboto;
   font-style: normal;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 60px;
-  width: 696px;
+  
   margin: 0 auto;
 
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--second-title-color--);
-  margin-bottom: 50px;
-  @media screen and (min-width: 768px) {
-    width: 768px;
-  }
+  
+  // @media screen and (min-width: 768px) {
+  //   width: 768px;
+  // }
   @media screen and (min-width: 480px) {
-    width: 480px;
+    width: 360px;
+    height: 64px;
+     font-size: 26px;
+  line-height: calc (42 / 26);
+  margin-bottom: 30px;
   }
-  @media screen and (min-width: 1200px) {
-    width: 1200px;
-  }
+  // @media screen and (min-width: 1200px) {
+  //   width: 1200px;
+  // font-size: 44px;
+  // line-height: 60px;
+  // width: 696px;
+  // margin-bottom: 50px;
+  // }
 }
 
 .hero__button {

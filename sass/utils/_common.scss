@@ -15,11 +15,12 @@ body {
   letter-spacing: 0.03em;
   margin-bottom: 50px;
   color: var(--title-color--);
-  @media screen and (min-width: 1200  zpx) {
-    margin-bottom: 50px;
-  }
+ 
   @media screen and (min-width: 480px) {
     margin-bottom: 30px;
+  }
+   @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
   }
 }
 .button {
