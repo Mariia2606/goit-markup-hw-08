@@ -12,9 +12,6 @@
   display: flex;
   align-items: center;
 }
-.header__item:last-child {
-   margin-right: 0;
-}
 .header--conteiner {
   background-color: var(--second-title-color--);
   border-bottom: 1px solid #ececec;
@@ -22,38 +19,15 @@
   justify-content: space-between;
 }
 .header__navigation {
-
-     @media screen and (min-width: 480px) {
-   display: none;
-  }
-  @media screen and (min-width: 768px) {
-   display: none;
-  }
-  @media screen and (min-width: 1200px) {
-   display: flex;
- 
-
-  }
+  display: flex;
 }
 
 .header__contact {
   margin-left: auto;
 }
 .header__contact-list {
-  // display: flex;
-  // align-items: center;
-   @media screen and (min-width: 480px) {
-   display: none;
-  }
-  @media screen and (min-width: 768px) {
-   display: none;
-  }
-  @media screen and (min-width: 1200px) {
-   display: flex;
+  display: flex;
   align-items: center;
-  justify-content: flex-end;
-
-  }
 }
 .header__link {
   font-weight: 500;
@@ -132,85 +106,4 @@
   fill: currentColor;
   margin-right: 10px;
   align-content: flex-end;
-}
-.open-menu-btn {
-
-}
-.header__mob-menu {
-position: absolute;
-background-color: var(--second-title-color--);
-width: 100vw;
-height: 100vh;
-top: 0;
-z-index: 5;
-padding-top: 21px;
-padding-left: 40px;
-padding-bottom: 48px;
-.container {
-  flex-direction: column;
-justify-content: space-between;
-height: 100%;
-}
-}
-.close-menu-btn{
-  display: block;
-  margin-left: auto;
-}
-.header__mob-menu__item {
-  &:not(:last-child) {
-    margin-bottom: 32px;
-  }
-}
-.header__mob-menu__link {
-font-family: Roboto;
-font-style: normal;
-font-weight: 500;
-font-size: 40px;
-line-height: calc(47 / 40);
-letter-spacing: 0.02em;
-
-color: #212121;
-}
-.header__mob-menu-contact-item {
-   &:not(:last-child) {
-    margin-bottom: 32px;
-  }
-}
-.header__mob-menu-contact-tel {
-  font-style: normal;
-font-weight: 500;
-font-size: 34px;
-line-height: calc(40 / 34);
-
-letter-spacing: 0.02em;
-
-color: #2196F3;
-}
-.header__mob-menu-contact-mail {
-font-style: normal;
-font-weight: 500;
-font-size: 24px;
-line-height: calc(28 / 24);
-
-letter-spacing: 0.02em;
-
-color: #757575;
-
-}
-.header__mob-sociallist {
-  margin-top: 64px;
-  display: flex;
-}
-
-.header__mob-sociallist-item {
-  &:not(:last-child) {
-    margin-right: 10px;
-  }
-  .header__mob-sociallist-link {
-   font-size: 18px;
-line-height: calc(22 / 18);
-letter-spacing: 0.02em;
-color: #2196F3;
-
-}
 }
