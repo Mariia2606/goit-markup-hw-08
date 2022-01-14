@@ -345,13 +345,14 @@ body {
 @media screen and (min-width: 768px) {
   .featurs__item {
     width: calc(100% / 2 - 30px);
-    margin-left: 30px;
+    margin-right: 30px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .featurs__item {
     width: calc(100% / 4 - 30px);
+    margin-right: 30px;
   }
 }
 
@@ -510,7 +511,14 @@ img {
 @media screen and (min-width: 768px) {
   .command__item {
     width: calc(100% / 2 - 30px);
-    margin-left: 30px;
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .command__item {
+    width: calc(100% / 4 - 30px);
+    margin-right: 30px;
   }
 }
 
