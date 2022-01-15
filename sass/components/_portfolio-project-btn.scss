@@ -10,6 +10,20 @@
     background: var(--acent-color--);
     color: var(--second-title-color--);
   }
+   @media screen and (min-width: 480px) {
+    display: flex;
+    flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 15px;
+  }
+  @media screen and (min-width: 1200px) {
+
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0;
+  }
 }
 
 .project-link {
