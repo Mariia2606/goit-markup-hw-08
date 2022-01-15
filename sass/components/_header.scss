@@ -3,48 +3,56 @@
   border-bottom: 1px solid #ececec;
 }
 
-.header__item {
-  &:not(:last-child){
+.header__item 
+{
+  &:not(:last-child)
+  {
     margin-right: 50px;
   }
-
   display: flex;
   align-items: center;
 }
-.header--conteiner {
+.header--conteiner 
+{
   background-color: var(--second-title-color--);
   border-bottom: 1px solid #ececec;
   @extend %align-list;
   justify-content: space-between;
 }
-.header__navigation {
- 
+.header__navigation 
+{ 
   display: none;
-   @media screen and (min-width: 768px) {
+   @media screen and (min-width: 768px) 
+   {
      display: flex;
    }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1200px) 
+  {
      display: flex;
   }
 }
 
-.header__contact {
+.header__contact 
+{
   margin-left: auto;
 }
-.header__contact-list { 
+.header__contact-list 
+{ 
   display: none;
   align-items: center;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) 
+  {
      display: flex;
      flex-direction: column;
   }
- @media screen and (min-width: 1200px) {
+ @media screen and (min-width: 1200px) 
+ {
      display: flex;
      flex-direction: row;
   }
- 
 }
-.header__link {
+.header__link 
+{
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -55,14 +63,17 @@
   padding-top: 32px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
-  &:focus {
+  &:focus 
+  {
     color: var(--acent-color--);
   }
 }
-.header__navigation .header__link.current {
+.header__navigation .header__link.current 
+{
   color: var(--acent-color--);
 }
-.header__link.current-acent::after {
+.header__link.current-acent::after 
+{
   content: "";
   width: 100%;
   height: 4px;
@@ -73,13 +84,17 @@
   bottom: -2px;
 }
 
-.header__contact-item {
-  @media screen and (min-width: 768px) {
+.header__contact-item 
+{
+  @media screen and (min-width: 768px) 
+  {
     margin-right: 0;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1200px) 
+  {
   margin-right: 50px;
-  &:last-child {
+  &:last-child 
+  {
     margin-right: 0;
   }
 }
@@ -141,6 +156,7 @@ font-size: 14px;
 margin-right: 8px;
 width: 14px;
 height: 10px;
+}
 }
 .telephon-link {
   fill: currentColor;
@@ -252,7 +268,7 @@ line-height: 1.22;
 letter-spacing: 0.02em;
 color: var(--acent-color--);
 }
-.header-mob-menu__socialink{
+.header-mob-menu__socialink {
   margin-top: 64px;
 }
 

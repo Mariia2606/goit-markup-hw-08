@@ -292,6 +292,14 @@ body {
   align-content: flex-end;
 }
 
+@media screen and (min-width: 768px) {
+  .mail-link {
+    margin-right: 8px;
+    width: 14px;
+    height: 10px;
+  }
+}
+
 .telephon-link {
   fill: currentColor;
   margin-right: 10px;
@@ -933,16 +941,15 @@ img {
 .client-icon:focus {
   fill: var(--acent-color--);
 }*/
-@media screen and (min-width: 480px) {
-  .footer__conteiner-flex {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
+.footer__conteiner-flex {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
 @media screen and (max-width: 1200px) {
   .footer__conteiner-flex {
+    display: flex;
     flex-direction: row;
     align-items: baseline;
   }
