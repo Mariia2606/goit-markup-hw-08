@@ -288,9 +288,13 @@ color: var(--acent-color--);
   border-color: none;
   background: #ffffff;
   border: none;
+  &:hover,
+  &:focus {
+    border: 1px solid var(--acent-color--);
+    fill: var(--acent-color--);
+  }
 }
 .open-menu-icon {
- 
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 &:hover,
@@ -300,14 +304,20 @@ color: var(--acent-color--);
 }
 .close-menu-btn {
   display: block;
-//  margin-right: 24px;
   margin-bottom: 8px;
    background: var(--second-title-color--);
   border-color: none;
   background: #ffffff;
   border: none;
   margin-left: 395px;
+    &:hover,
+  &:focus {
+   
+    fill: var(--acent-color--);
+  }
 }
+
+
 .close-menu-icon {
  
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
