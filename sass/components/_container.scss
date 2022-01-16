@@ -31,8 +31,13 @@
 }
 .conteiner--footer {
   background-color: var(--second-bg-color--);
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
   padding-top: 64px;
   padding-bottom: 64px;
+  }
+
 }
 
 // .conteiner--portfolio-header {

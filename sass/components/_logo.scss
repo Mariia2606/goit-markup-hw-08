@@ -4,19 +4,21 @@
   font-size: 26px;
   color: var(--acent-color--);
   text-decoration: none;
-  display: flex;
+  
    @media screen and (min-width: 768px)
   {font-size: 24px;
 line-height: 1.16;
-margin-right: 88px;}
+}
  @media screen and (min-width: 1200px)
-  {font-size: 26px;
+  {
+    display: flex;
+    font-size: 26px;
 line-height: 1.19;
     margin-right: 95px;}
 }
 .logo--footer {
   color: var(--second-title-color--);
-  margin-bottom: 20px;
+  
 }
 .logo--header {
   color: var(--title-color--);

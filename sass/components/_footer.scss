@@ -11,21 +11,24 @@
 //   color: var(--acent-color--);
 // }
 .footer__conteiner-flex {
-   display: flex;
- flex-direction: column;
-text-align: center;
-  // @media screen and (min-width: 768px) { 
 
-  // }
-  @media screen and (max-width: 1200px) {
-    display: flex;
+   @media screen and (max-width: 1200px) {
+display: flex;
  flex-direction: row;
-  align-items: baseline;
   }
 }
 
 .footer__address {
-  margin-right: 70px;
+  text-align: center;
+  margin-bottom: 60px;
+   @media screen and (min-width: 768px) {
+      margin-right: 165px;
+    margin-bottom: 0;
+  }
+  @media screen and (min-width: 1200px) {
+     margin-right: 70px;
+  }
+ 
 }
 .footer__address-text {
   font-style: normal;
@@ -34,17 +37,18 @@ text-align: center;
   letter-spacing: 0.03em;
   color: var(--second-title-color--);
   margin-bottom: 9px;
+  @media screen and (min-width: 768px) {
+  text-align: start;
+}
 }
 .footer__subscription-list {
-  display: flex;
-  justify-content: center;
+display: flex;
+justify-content: center;
 }
 .footer__contact-item {
   margin-bottom: 9px;
 }
 .footer__contact-link {
-  display: flex;
-
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
@@ -55,6 +59,9 @@ text-align: center;
   &:focus {
     color: var(--second-title-color--);
   }
+  @media screen and (min-width: 1200px) {
+  display: flex;
+}
 }
 .footer__contact-item:last-child {
   margin-bottom: 0;
@@ -66,8 +73,13 @@ text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--second-title-color--);
-  display: flex;
-  margin-bottom: 20px;
+margin-bottom: 20px;
+text-align: center;
+  @media screen and (min-width: 1200px) {
+     display: flex;
+  }
+  
+ 
 }
 .footer-item {
   margin-bottom: 10px;
@@ -108,8 +120,18 @@ text-align: center;
   justify-content: center;
 }
 
-.subscription {
-  margin-right: auto;
+.footer__subscription {
+  margin-bottom: 60px;
+  align-items: center;
+  @media screen and (min-width: 768px) {
+      display: flex;
+      flex-direction: column;;
+  }
+   @media screen and (min-width: 1200px) {
+      margin-bottom: 0;
+      margin-right: 93px;
+  }
+  
 }
 /*
 .comand-sicial-icon:hover,
@@ -117,3 +139,25 @@ text-align: center;
   fill: var(--second-title-color--);
 }
 */
+.footer__logo {
+ margin-bottom: 20px;
+
+}
+.footer--tablet {
+   @media screen and (min-width: 768px) {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  justify-content: row;
+  margin-bottom: 0;
+}
+}
+// .footer--desktop--list
+// {
+//   @media screen and (min-width: 1200px) {
+  
+//  display: flex;
+// }
+// }
