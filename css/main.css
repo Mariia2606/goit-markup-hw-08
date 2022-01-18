@@ -171,6 +171,7 @@ body {
   .header__contact-list {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
   }
 }
 
@@ -325,10 +326,6 @@ body {
   padding-bottom: 48px;
   padding-left: 40px;
   padding-right: 25px;
-}
-
-.open-menu-btn {
-  margin-left: auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -875,6 +872,9 @@ img {
 .client__item {
   border: 1px solid #afb1b8;
   border-radius: 4px;
+  width: calc(100% / 2 - 30px);
+  margin-left: 30px;
+  margin-bottom: 30px;
 }
 
 .client__item:hover, .client__item:focus {
@@ -885,15 +885,8 @@ img {
   margin-right: 0;
 }
 
-@media screen and (min-width: 480px) {
-  .client__item {
-    width: calc(100% / 2 - 30px);
-    margin-left: 30px;
-    margin-bottom: 30px;
-  }
-  .client__item:last-child(n+5) {
-    margin-bottom: 0;
-  }
+.client__item:last-child(n+5) {
+  margin-bottom: 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -959,10 +952,10 @@ img {
 .client-icon:focus {
   fill: var(--acent-color--);
 }*/
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .footer__conteiner-flex {
     display: flex;
-    flex-direction: row;
+    align-items: baseline;
   }
 }
 
@@ -1244,8 +1237,8 @@ img {
 }
 
 .modal {
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   background-color: var(--second-title-color--);
   position: absolute;
   top: 50%;
@@ -1253,6 +1246,13 @@ img {
   transform: translate(-50%, -50%);
   padding: 40px;
   transition: transform 800ms;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .modal-close {
@@ -1327,7 +1327,7 @@ img {
 }
 
 .modal-input {
-  width: 448px;
+  width: 370px;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
@@ -1352,6 +1352,12 @@ padding-right: 15px;*/
   font-size: 12px;
   line-height: 0.86;
   color: rgba(117, 117, 117, 0.5);
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-input {
+    width: 448px;
+  }
 }
 
 .modal-name-icon {
@@ -1438,8 +1444,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   width: 16px;
   height: 15px;
   border: 2px solid #000000;
-  margin-right: 8.38px;
-  display: flex;
+  margin-right: 8px;
   justify-content: center;
   align-items: center;
   cursor: pointer;
@@ -1447,6 +1452,22 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 .modal-condition-text span:hover {
   border-color: var(--acent-color--);
+}
+
+@media screen and (min-width: 768px) {
+  .modal-condition-text {
+    font-size: 12px;
+    line-height: 1.16;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-condition-text {
+    display: flex;
+    font-size: 14px;
+    line-height: 1.17;
+    margin-right: 8.38px;
+  }
 }
 
 .modal-check:checked + .modal-condition-text span {
@@ -1473,7 +1494,7 @@ border-radius: 2px;
   }*/
 .modal-textarea {
   display: block;
-  width: 448px;
+  width: 370px;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
@@ -1494,6 +1515,12 @@ border-radius: 2px;
   color: rgba(117, 117, 117, 0.5);
 }
 
+@media screen and (min-width: 1200px) {
+  .modal-textarea {
+    width: 448px;
+  }
+}
+
 .modal-form-field {
   margin-bottom: 10px;
 }
@@ -1509,12 +1536,18 @@ border-radius: 2px;
   top: 50%;
 }
 
-.contract {
+.modal-contract {
   color: var(--acent-color--);
   margin-left: 3px;
 }
 
-.button-submit {
+@media screen and (min-width: 768px) {
+  .modal-contract {
+    margin-left: 0;
+  }
+}
+
+.modal-button-submit {
   display: block;
   margin: 0 auto;
 }
@@ -1529,7 +1562,7 @@ img {
   .project__list {
     display: flex;
     flex-wrap: wrap;
-    margin-left: -30px;
+    margin-right: -30px;
   }
 }
 
@@ -1584,6 +1617,7 @@ img {
   outline: 1px solid tomato;
 }*/
 .project__card-content {
+  flex-grow: 1;
   padding: 20px 24px;
   border-left: 1px solid var(--bg-portfolio--);
   border-right: 1px solid var(--bg-portfolio--);
@@ -1599,7 +1633,9 @@ img {
 }
 
 .project__card-link {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .project__card-link:hover,
@@ -1728,7 +1764,6 @@ img {
   .logo {
     font-size: 24px;
     line-height: 1.16;
-    margin-right: 88px;
   }
 }
 
@@ -1737,7 +1772,6 @@ img {
     display: flex;
     font-size: 26px;
     line-height: 1.19;
-    margin-right: 95px;
   }
 }
 
@@ -1747,6 +1781,18 @@ img {
 
 .logo--header {
   color: var(--title-color--);
+}
+
+@media screen and (min-width: 768px) {
+  .logo--header {
+    margin-right: 88px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo--header {
+    margin-right: 95px;
+  }
 }
 
 .conteiner {

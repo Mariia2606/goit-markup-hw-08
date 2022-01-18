@@ -1,6 +1,7 @@
 .header {
   background-color: var(--second-title-color--);
   border-bottom: 1px solid #ececec;
+
 }
 
 .header__item 
@@ -44,6 +45,7 @@
   {
      display: flex;
      flex-direction: column;
+     align-items: flex-start;
   }
  @media screen and (min-width: 1200px) 
  {
@@ -183,7 +185,7 @@ height: 14px;
   padding-right: 25px;
 }
 .open-menu-btn {
-  margin-left: auto;
+  
    @media screen and (min-width: 768px) {
     display: none;
   }
