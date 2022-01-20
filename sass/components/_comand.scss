@@ -11,15 +11,17 @@ img {
 .command__list {
   // display: flex;
   // flex-wrap: wrap;
+  
    @media screen and (min-width: 768px) {
 display: flex;
   flex-wrap: wrap;
-  margin-left: -30px;
-  margin-bottom: -30px;
+  margin-right: -30px;
+ 
   }
     @media screen and (min-width: 1200px) {
 display: flex;
   margin-right: -30px;
+margin-bottom: 0;
   }
 }
 .command__member-text {
@@ -52,10 +54,9 @@ display: flex;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-margin-bottom: 0;
-@media screen and (min-width: 480px) {
+
   margin-bottom: 30px;
-}
+
  @media screen and (min-width: 768px) {
 width: calc(100% / 2 - 30px);
 margin-right: 30px;
@@ -71,17 +72,13 @@ margin-right: 30px;
 //   margin-right: 30px;
  
 
-.command__item:nth-child(4n) {
-  margin-right: 0;
-}
+
 .command__sociallist-item {
   width: 44px;
   height: 44px;
   margin-right: 10px;
 }
-.command__sociallist-item:last-child {
-  margin-right: 0;
-}
+
 .command__sociallist-link {
   width: 100%;
   height: 100%;

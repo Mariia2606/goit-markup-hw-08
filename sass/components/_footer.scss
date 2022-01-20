@@ -22,7 +22,7 @@ display: flex;
   text-align: center;
   margin-bottom: 60px;
    @media screen and (min-width: 768px) {
-      margin-right: 165px;
+     
     margin-bottom: 0;
   }
   @media screen and (min-width: 1200px) {
@@ -144,10 +144,11 @@ text-align: center;
 
 }
 .footer--tablet {
+  margin-bottom: 60px;
    @media screen and (min-width: 768px) {
   display: flex;
-  justify-content: center;
-  margin-bottom: 60px;
+  justify-content: space-around;
+  // margin-bottom: 60px;
 }
 @media screen and (min-width: 1200px) {
   justify-content: row;
