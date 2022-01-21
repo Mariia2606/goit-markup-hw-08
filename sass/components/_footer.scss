@@ -30,6 +30,14 @@ display: flex;
   }
  
 }
+.footer-subscribe {
+  @media screen and (max-width: 1200px) {
+   display: flex;
+  flex-direction: row; 
+align-items: flex-start;
+  }
+  
+}
 .footer__address-text {
   font-style: normal;
   font-size: 14px;
