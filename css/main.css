@@ -729,8 +729,10 @@ body {
   font-size: 14px;
   line-height: 0.87;
   text-align: center;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
   position: absolute;
+  color: var(--second-title-color--);
   background-color: rgba(47, 48, 58, 0.8);
   bottom: 0;
   left: 0;
@@ -740,6 +742,10 @@ body {
   padding-top: 27px;
   padding-bottom: 27px;
   margin: 0 auto;
+}
+
+.work__list:hover .work__text {
+  transform: translateY(0);
 }
 
 img {
