@@ -193,9 +193,10 @@ height: 14px;
 {
   position: fixed;
   background-color: var(--second-title-color--);
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   top: 0;
+  left: 0;
   z-index: 5;
   padding-top: 21px;
   padding-bottom: 48px;
@@ -328,7 +329,9 @@ color: var(--acent-color--);
   border-color: none;
   background: #ffffff;
   border: none;
-  margin-left: 395px;
+  position: absolute;
+  top: 10px;
+  right: 15px;
     &:hover,
   &:focus {
    
