@@ -230,9 +230,27 @@
 
         <ul class="command__list list">
           <li class="command__item">
-            <img 
+            <picture>
+              <source srcset="./images/imagex1/ighor-desktopx1.jpg 1x, 
+                            ./images/imagex2/ighor2x.jpg 2x"
+                             media="(min-width: 1200px)" />
+    
+<source
+                   srcset="./images/imagex1/ighor-tabletx1.jpg 1x, 
+              ./images/imagex2/ighor-tabletx2.jpg 2x"
+              media="(min-width: 768px)"
+/>
+        <source
+                   srcset="./images/imagex1/ighor-mobx1.jpg 1x, 
+              ./images/imagex2/ighor-mobx2.jpg 2x"
+              media="(min-width: 320px)"
+/>
+  <img src="images/img4.jpg"
+    alt="фото Игорь Демьяненко"/>
+            </picture>
+            <!-- <img 
              srcset="./images/imagex1/ighor1x.jpg 1x, ./images/imagex2/ighor2x.jpg 2x"
-            src="images/img4.jpg" alt="фото Ольга Репина" width="270" />
+            src="images/img4.jpg" alt="фото Игорь Демьяненко" width="270" /> -->
             <div class="command__content">
               <h3 class="command__member-text">Игорь Демьяненко</h3>
               <p lang="en" class="command__speciality-text">
@@ -273,9 +291,21 @@
           </li>
 
           <li class="command__item">
-            <img 
+                  <picture>
+                    <source srcset="./images/imagex1/olgax1.jpg 1x, 
+                      ./images/imagex2/olga2x.jpg 2x" media="(min-width: 1200px)" />
+                  
+                    <source srcset="./images/imagex1/olga-tabletx1.jpg 1x, 
+                                ./images/imagex2/olga-tabletx2.jpg 2x" media="(min-width: 768px)" />
+                    <source srcset="./images/imagex1/olga-mobx1.jpg 1x, 
+                                ./images/imagex2/olga-mobx2.jpg 2x" media="(min-width: 320px)" />
+                      <img src="images/img3.jpg"
+                        alt="фото Ольга Репина"  />
+             </picture>      
+            <!-- <img 
              srcset="./images/imagex1/olga1x.jpg 1x, ./images/imagex2/olga2x.jpg 2x"
-            src="images/img3.jpg" alt="фото Ольга Репина" width="270" />
+            src="images/img3.jpg" alt="фото Ольга Репина" width="270" /> -->
+           
             <div class="command__content">
               <h3 class="command__member-text">Ольга Репина</h3>
               <p lang="en" class="command__speciality-text">
@@ -316,9 +346,21 @@
           </li>
 
           <li class="command__item">
-            <img 
+              <picture>
+                <source srcset="./images/imagex1/nickoley1x.jpg 1x, 
+                 ./images/imagex2/nickoley2x.jpg 2x" media="(min-width: 1200px)" />
+              
+                <source srcset="./images/imagex1/nickoley-tabletx1.jpg 1x, 
+              ./images/imagex2/nickoley-tabletx2.jpg 2x" media="(min-width: 768px)" />
+                <source srcset="./images/imagex1/nickoley-mobx2.jpg 1x, 
+              ./images/imagex2/nickoley-mobx2.jpg 2x" media="(min-width: 320px)" />
+              <img src="images/img2.jpg"
+                alt="фото Николай Тарасов"  />
+              </picture>
+            <!-- <img 
+            
              srcset="./images/imagex1/nickoley1x.jpg 1x, ./images/imagex2/nickoley2x.jpg 2x"
-            src="images/img2.jpg" alt="фото Николай Тарасов" width="270" />
+            src="images/img2.jpg" alt="фото Николай Тарасов" width="270" /> -->
             <div class="command__content">
               <h3 class="command__member-text">Николай Тарасов</h3>
               <p lang="en" class="command__speciality-text">
@@ -358,9 +400,20 @@
             </div>
           </li>
           <li class="command__item">
-            <img 
+              <picture>
+                <source srcset="./images/imagex1/michaelx1.jpg 1x, 
+                               ./images/imagex2/michaelx2.jpg 2x" media="(min-width: 1200px)" />
+              
+                <source srcset="./images/imagex1/michael-tabletx1.jpg 1x, 
+                            ./images/imagex2/michael-tabletx2.jpg 2x" media="(min-width: 768px)" />
+                <source srcset="./images/imagex1/michael-mobx1.jpg 1x, 
+                            ./images/imagex2/michael-mobx2.jpg 2x" media="(min-width: 320px)" />
+                <img  src="images/img.jpg"
+                  alt="фото Михаил Ермаков" />
+              </picture>
+            <!-- <img 
              srcset="./images/imagex1/michaelx1.jpg 1x, ./images/imagex2/michaelx2.jpg 2x"
-            src="images/img.jpg" alt="фото Михаил Ермаков" width="270" />
+            src="images/img.jpg" alt="фото Михаил Ермаков" width="270" /> -->
             <div class="command__content">
               <h3 class="command__member-text">Михаил Ермаков</h3>
               <p lang="en" class="command__speciality-text">
@@ -512,6 +565,7 @@
           </form>
         </div>
       </div>
+      </div>
   </footer>
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
@@ -569,7 +623,7 @@
       </form>
     </div>
   </div>
-  </div>
+  
   <script src="./js/modal.js"></script>
   <script src="./js/menu.js"></script>
 </body>

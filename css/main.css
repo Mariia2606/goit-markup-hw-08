@@ -373,6 +373,10 @@ body {
   color: var(--acent-color--);
 }
 
+.header-mob-menu__link.current {
+  color: var(--acent-color--);
+}
+
 .header-mob-menu__contact-mail {
   font-weight: 500;
   font-size: 24px;
@@ -950,6 +954,10 @@ img {
 .client-icon:focus {
   fill: var(--acent-color--);
 }*/
+.footer__conteiner-flex {
+  justify-content: center;
+}
+
 @media screen and (min-width: 1200px) {
   .footer__conteiner-flex {
     display: flex;
@@ -971,6 +979,23 @@ img {
 @media screen and (min-width: 1200px) {
   .footer__address {
     margin-right: 70px;
+  }
+}
+
+.footer-subscribe {
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-subscribe {
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-subscribe {
+    flex-direction: row;
+    justify-content: flex-start;
   }
 }
 
@@ -1444,6 +1469,10 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   margin: -1px;
 }
 
+.modal-condition-text {
+  font-size: 12px;
+}
+
 .modal-condition-text span {
   width: 16px;
   height: 15px;
@@ -1460,7 +1489,6 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 @media screen and (min-width: 768px) {
   .modal-condition-text {
-    font-size: 12px;
     line-height: 1.16;
   }
 }
@@ -1542,13 +1570,6 @@ border-radius: 2px;
 
 .modal-contract {
   color: var(--acent-color--);
-  margin-left: 3px;
-}
-
-@media screen and (min-width: 768px) {
-  .modal-contract {
-    margin-left: 0;
-  }
 }
 
 .modal-button-submit {
@@ -1690,8 +1711,8 @@ img {
 }
 
 .footer__online-form {
-  display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -1702,7 +1723,9 @@ img {
 
 @media screen and (min-width: 1200px) {
   .footer__online-form {
+    display: flex;
     flex-direction: row;
+    align-items: flex-start;
   }
 }
 
@@ -1710,8 +1733,6 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  justify-content: center;
-  margin-bottom: 60px;
 }
 
 .subscribe-btn-icon {
@@ -1720,7 +1741,7 @@ img {
 }
 
 .footer__online-input {
-  width: 100%;
+  width: 450px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
@@ -1856,14 +1877,14 @@ img {
 
 .conteiner--footer {
   background-color: var(--second-bg-color--);
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 65px;
+  padding-bottom: 65px;
 }
 
 @media screen and (min-width: 1200px) {
   .conteiner--footer {
-    padding-top: 64px;
-    padding-bottom: 64px;
+    padding-top: 72px;
+    padding-bottom: 72px;
   }
 }
 

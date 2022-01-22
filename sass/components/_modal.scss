@@ -210,6 +210,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   margin: -1px;
 }
 .modal-condition-text {
+    font-size: 12px;
   span {
     width: 16px;
     height: 15px;
@@ -217,7 +218,6 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     //  line-height: 1.16;
     border: 2px solid #000000;
     margin-right: 8px;
-
     justify-content: center;
     align-items: center;
     cursor: pointer;
@@ -226,7 +226,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
   }
      @media screen and (min-width: 768px) {
-    font-size: 12px;
+    
     line-height: 1.16;
     
 
@@ -303,10 +303,10 @@ border-radius: 2px;
 }
 .modal-contract {
   color: var(--acent-color--);
-  margin-left: 3px;
-   @media screen and (min-width: 768px) {
-     margin-left: 0;
-  }
+  
+  //  @media screen and (min-width: 768px) {
+  //    margin-left: 3px;
+  // }
 }
 
 .modal-button-submit {
